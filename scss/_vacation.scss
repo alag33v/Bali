@@ -2,11 +2,24 @@
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
+  @media (max-width: 1050px) {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+  }
 }
 
 .vacation__title {
   margin: 0;
   max-width: 380px;
+  @media (max-width: 1050px) {
+    max-width: 1000px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 5px;
+  }
 }
 
 .vacation__text {
@@ -17,6 +30,15 @@
   color: $black;
   max-width: 550px;
   margin: 0 0 10px;
+  @media (max-width: 1050px) {
+    max-width: 800px;
+  }
+  @media (max-width: 600px) {
+    font-size: 15px;
+  }
+  @media (max-width: 450px) {
+    font-size: 14px;
+  }
 }
 
 .vacation__link {

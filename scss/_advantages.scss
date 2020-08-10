@@ -1,13 +1,27 @@
 .advantages__wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 120px 50px 0;
+  @media (max-width: 700px) {
+    padding: 50px 0 0;
+  }
+}
+
+.advantages__item {
+  @media (max-width: 700px) {
+    width: 50%;
+    margin-bottom: 25px;
+  }
 }
 
 .advantages__image {
   width: 80px;
   height: 80px;
   display: block;
+  @media (max-width: 700px) {
+    margin: 0 auto;
+  }
 }
 
 .advantages__title {
