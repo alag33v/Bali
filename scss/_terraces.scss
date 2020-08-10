@@ -1,0 +1,28 @@
+.terraces__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 120px;
+}
+
+.terraces__image {
+  display: block;
+  object-fit: cover;
+}
+
+.terraces__title {
+  font-family: 'Comfortaa', cursive;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  color: $blue;
+  margin-top: 30px;
+}
+
+.terraces__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: $black;
+  max-width: 400px;
+  text-align: justify;
+}

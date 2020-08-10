@@ -1,0 +1,29 @@
+.advantages__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 50px 0;
+}
+
+.advantages__image {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+
+.advantages__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  color: $lightBlack;
+  margin: 25px 0 10px;
+}
+
+.advantages__text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  color: $gray;
+  display: block;
+}

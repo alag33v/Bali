@@ -1,0 +1,18 @@
+.photo__title {
+  padding-top: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.photo__text {
+  text-align: center;
+  margin: 0;
+}
+
+.photo__image {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  display: block;
+  object-fit: cover;
+}

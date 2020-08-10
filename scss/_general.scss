@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: $black;
+}
+
+.title {
+  font-family: 'Comfortaa', cursive;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  align-items: center;
+  color: $lightBlack;
+}

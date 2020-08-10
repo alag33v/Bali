@@ -1,0 +1,96 @@
+.gate__title {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.gate__content {
+  position: relative;
+}
+
+.gate__image {
+  display: block;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.gate__dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: $blue;
+  cursor: pointer;
+  position: absolute;
+  &::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #1e0858;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+}
+
+.gate__dot--good {
+  top: 300px;
+  left: 370px;
+  &::after {
+    content: '';
+    width: 140px;
+    height: 110px;
+    background: url(../images/line-right.svg);
+    position: absolute;
+    top: -100px;
+    right: -90px;
+    display: none;
+  }
+}
+
+.gate__dot--evil {
+  top: 300px;
+  right: 370px;
+  &::after {
+    content: '';
+    width: 80px;
+    height: 110px;
+    background: url(../images/line-left.svg);
+    position: absolute;
+    top: -100px;
+    left: -56px;
+    display: none;
+  }
+}
+
+.gate__text {
+  font-family: 'Comfortaa', cursive;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  color: $white;
+  position: absolute;
+  display: none;
+}
+
+.gate__text--good {
+  top: -133px;
+  right: -76px;
+}
+
+.gate__text--evil {
+  top: -133px;
+  left: -51px;
+}
+
+.gate__dot--good:hover::after,
+.gate__dot--evil:hover::after,
+.gate__dot:hover .gate__text {
+  display: block;
+}
+
+.gate__text-description {
+  text-align: justify;
+  max-width: 800px;
+  margin: 30px auto 0;
+}
