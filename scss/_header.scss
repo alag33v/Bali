@@ -34,3 +34,117 @@
   padding-bottom: 7px;
   border-bottom: 2px solid $blue;
 }
+
+// Burger menu
+
+.burger__button-wrapper {
+  width: 25px;
+  height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+  @media (max-width: 600px) {
+    display: flex;
+    margin-right: 20px;
+    margin-left: auto;
+  }
+}
+
+.burger__button {
+  width: 25px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: $lightBlack;
+  position: relative;
+  z-index: 5;
+}
+
+.burger__button::before {
+  content: '';
+  width: 25px;
+  height: 2px;
+  top: -7px;
+  left: 0;
+  border-radius: 5px;
+  background-color: $lightBlack;
+  display: block;
+  position: absolute;
+  transition: transform 0.2s linear, top 0.2s linear 0.2s;
+}
+
+.burger__button::after {
+  content: '';
+  width: 25px;
+  height: 2px;
+  top: 7px;
+  left: 0;
+  border-radius: 5px;
+  background-color: $lightBlack;
+  display: block;
+  position: absolute;
+  transition: transform 0.2s linear, top 0.2s linear 0.2s;
+}
+
+// Burger turn to X
+
+.burger__button.active {
+  background-color: transparent;
+}
+
+.burger__button.active::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s linear 0.2s;
+}
+
+.burger__button.active::after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s linear 0.2s;
+}
+
+// Mobile navigation
+
+.menu__mobile-nav {
+  display: none;
+}
+
+.menu__mobile-nav--active {
+  display: block;
+}
+
+.mobile-nav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.mobile-nav__item {
+  list-style: none;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #424245;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.mobile-nav__item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.mobile-nav__link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: $Black;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
