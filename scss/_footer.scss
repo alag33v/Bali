@@ -58,7 +58,7 @@
 
 .footer__link--instagram,
 .footer__link--facebook,
-.footer__link--youTube,
+.footer__link--youtube,
 .footer__link--email {
   padding-left: 30px;
   position: relative;
@@ -81,8 +81,8 @@
   background: url(../images/footer/facebook.svg);
 }
 
-.footer__link--youTube::before {
-  background: url(../images/footer/youTube.svg);
+.footer__link--youtube::before {
+  background: url(../images/footer/youtube.svg);
 }
 
 .footer__link--email::before {
